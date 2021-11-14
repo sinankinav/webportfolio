@@ -1,0 +1,247 @@
+body{
+    background-color:#f6f5f5;
+    margin: 0px;
+    padding:0px;
+}  
+ul {
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+}
+section {
+        width: 100%;
+        height:95vh;
+        background-image:url(../css/images/gray.jpg);
+        background-repeat:no-repeat;
+        background-size: cover;
+      
+}
+nav {
+    position:fixed;
+     top:0px;
+     left:0px;
+     right:0px; 
+     z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #FFFF;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding: 0px 5%;
+
+}
+nav ul {
+    display: flex;
+
+}
+nav ul li a {
+    margin:30px;
+    font-family:myriad pro regular;
+    color:#505050;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.logo {
+    font-family: 'Permanent Marker', cursive;
+    color: #000000;
+    font-size: 22px;
+}
+.active {
+    font-weight: bold;
+    color:#2d2a2a;
+}
+
+.text-container p:nth-child(1){
+    font-family: calibri;
+    font-family: bold;
+    color:#6d6d6d;
+    font-size: 30px;
+
+}
+.text-container p:nth-child(2){
+    font-family: calibri;
+    font-weight:bold;
+    letter-spacing:1px;
+    color:#1a1a1a;
+    font-size:60px;
+
+}
+.text-container p:nth-child(3){
+    font-family: myriad pro regular;
+    color:#403e3e;
+    font-size: 30px;
+}
+.text-container p {
+    
+    margin: 45px 0px 25px;
+ 
+}
+.text-container {
+    position: absolute;
+    left:13%;
+    top:42%;
+    transform: translate(-13%,-42%);
+
+}
+.text-container button {
+    width: 130px;
+    height: 42px;
+    border-radius: 10px;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    margin: 0px 10px;;
+}
+.hire-btn {
+    border:2px solid;
+    color: #373636;
+}
+.down-cv {
+    background-color: #0b0b0b;
+    color:#FFFFFF;
+    border:none;
+}
+button:active {
+    transform:scale(1.1);
+}
+.model {
+    max-height:460px;
+    position:absolute;
+    bottom:50px;
+    left:80%;
+    transform:translateX(-70%);
+    border-radius: 50%;
+}
+.about-container {
+    width:80%;
+    height:330px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    margin: -7% auto 20px auto;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about-text {
+    width: 70%;
+}
+.about-text p:nth-child(1){
+    color: #403e3e;
+    font-family: myriad pro;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 0px;
+    
+}
+.about-text p:nth-child(2) {
+    color:#3e3d3d;
+    font-size:13px;
+    font-family: myriad pro;
+    font-weight: bold;
+    line-height: 5px;
+}
+.about-text p:nth-child(3) {
+    color:#7e7d7d;
+    font-family: calibri;
+    font-size: 16px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+.services .work img {
+    max-width: 400px;
+    height :300px
+}
+.services .work p  {
+    text-align: center;
+    text-decoration: none;
+    font-size:13px;
+    font-family: myriad pro;
+    font-weight: bold;
+}
+.work p a {
+    color:#3e3d3d;
+
+
+
+}
+.container {
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border:none;
+    outline: none;
+    left: 2px;
+   width: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    background: #e4e3e3;
+   
+    text-align: left;
+}
+.box-container{
+    height: 200px;
+    width: 100%;
+    box-shadow: 0 5px 15px #111;
+    border-radius: 5px;
+   
+    text-align: left;
+}
+
+.box-container .box {
+    height: 80%;
+    width: 100%;
+    
+    margin :0px auto;
+    
+    background: #FFFFFF;
+    
+   
+}
+#input {width: 95%; margin:auto ; height: 50px; background: none; font-size: 15px; color:black; border: none; border-bottom: 1px solid oldlace;}
+button {height: 30px;
+        width: 150px;
+        background: #ff0033;
+        color: #fff;
+        cursor: pointer;
+        margin:10px 0;
+        font-size: 15px;
+        box-shadow: 0 3px 10px #111;
+        border-radius: 5px;
+        border: none;
+        font-weight: bold;
+}
+.contact { width: 100%;
+           height: 280px;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+
+}
+.contact p { font-size: 30px; font-family: calibri; font-weight: bold; border-bottom: 2px solid grey;}
+.contact button {width: 200px;
+                 height: 40px;
+                 outline: none;
+                 border:none;
+                 font-size: 14px;
+                 font-weight: bold;
+}
+@media (max-width:1200px) {
+    .model {display: none;}
+}
+@media (max-width:480px) {
+    nav li {display: none;}
+}
