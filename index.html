@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
 </head>
+
 <body>
     <section>
         <nav>
-           
+
             <a href="#" class="logo">Sinan Kınav</a>
             <ul>
                 <li><a href="#about" class="active">Hakkımda</a></li>
@@ -23,14 +26,14 @@
                 <li><a href="#comments">Yorumlar</a></li>
                 <li><a href="#contact-me">İletişim</a></li>
             </ul>
-        
+
         </nav>
         <div class="text-container">
             <p>Merhaba</p>
             <p>Ben Sinan Kınav</p>
             <p>Frontend Developer Olarak Hizmet Veriyorum</p>
             <button class="inspect-btn">Birlikte Çalışalım</button>
-           
+
         </div>
 
         <img src="css/images/sinan.jpg" alt="model" class="model">
@@ -40,7 +43,9 @@
         <div class="about-text">
             <p>Hakkımda</p>
             <p>Frontend Developer</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugiat itaque similique magni cupiditate asperiores modi earum quaerat? Alias ipsam illo, delectus itaque maiores vitae labore ab qui cumque dolore, deserunt eius ex ullam tempora. Sequi corporis nihil tempora quibusdam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugiat itaque similique magni cupiditate
+                asperiores modi earum quaerat? Alias ipsam illo, delectus itaque maiores vitae labore ab qui cumque
+                dolore, deserunt eius ex ullam tempora. Sequi corporis nihil tempora quibusdam.</p>
         </div>
     </div>
     <div id="service" class="services">
@@ -59,14 +64,11 @@
     </div>
     <div id="comments" class="container">
         <input type="text" id="input" placeholder="Yorumlarınızı yazabilirsiniz...">
-        <button type="button" name="button" id="cancel">İptal Et</button>
-        <button type="button" name="button" id="comment">Yorum Yaz</button>
+        <button type="button" id= btnTemizle onclick="temizle()">Temizle</button>
+        <button type="button" id="btnEkle" onclick="ekle()" >Yorum Yaz</button>
 
-        <div class="box-container">
-            <div class="box"></div>
-            <button type="button" name="button" id="delete">Sil</button>
+        <table id="liste"></table>
 
-        </div>
     </div>
     <div id="contact-me" class="contact">
         <p> Projelerinizi Hayata Geçirelim</p>
